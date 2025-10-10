@@ -267,7 +267,13 @@ lblSliderValue.setText("Pilih via Slider");
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnHitungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHitungActionPerformed
-    try {
+       String hargaText = txtHargaAsli.getText().trim();
+       
+            if (hargaText.isEmpty()) {
+                JOptionPane.showMessageDialog(this, "Harga tidak boleh kosong!", "Error", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+                    try {
         double hargaAsli = Double.parseDouble(txtHargaAsli.getText());
         int diskonUtama = Integer.parseInt(cmbDiskon.getSelectedItem().toString().replace("%", ""));
             int diskonSlider = sldDiskon.getValue();
