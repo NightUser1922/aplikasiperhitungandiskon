@@ -15,6 +15,7 @@ public class FrmDiskon extends javax.swing.JFrame {
     public FrmDiskon() {
         initComponents();
         
+cmbDiskon.addItem  ("0%");     
 cmbDiskon.addItem("10%");
 cmbDiskon.addItem("20%");
 cmbDiskon.addItem("30%");
