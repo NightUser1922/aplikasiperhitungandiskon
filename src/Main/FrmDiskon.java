@@ -39,8 +39,14 @@ lblSliderValue.setText("Pilih via Slider");
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel4 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        txtHasil = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        txtHemat = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         txtHargaAsli = new javax.swing.JTextField();
@@ -51,11 +57,7 @@ lblSliderValue.setText("Pilih via Slider");
         jLabel5 = new javax.swing.JLabel();
         txtKupon = new javax.swing.JTextField();
         btnHitung = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
-        txtHasil = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
-        txtHemat = new javax.swing.JTextField();
+        jPanel5 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtRiwayat = new javax.swing.JTextArea();
@@ -76,7 +78,7 @@ lblSliderValue.setText("Pilih via Slider");
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 548, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(58, 58, 58))
         );
         jPanel1Layout.setVerticalGroup(
@@ -86,6 +88,18 @@ lblSliderValue.setText("Pilih via Slider");
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
+
+        jPanel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        jLabel6.setText("Harga Akhir");
+
+        txtHasil.setEditable(false);
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 3, 16)); // NOI18N
+        jLabel7.setText("Penghematan");
+
+        txtHemat.setEditable(false);
 
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
@@ -133,7 +147,7 @@ lblSliderValue.setText("Pilih via Slider");
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 211, Short.MAX_VALUE)
                                 .addGap(36, 36, 36))
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -144,7 +158,7 @@ lblSliderValue.setText("Pilih via Slider");
                                 .addGap(23, 23, 23)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(sldDiskon, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(sldDiskon, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 325, Short.MAX_VALUE)
                             .addComponent(cmbDiskon, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(txtHargaAsli)
                             .addComponent(txtKupon))))
@@ -174,18 +188,6 @@ lblSliderValue.setText("Pilih via Slider");
                 .addContainerGap())
         );
 
-        jPanel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        jLabel6.setText("Harga Akhir");
-
-        txtHasil.setEditable(false);
-
-        jLabel7.setFont(new java.awt.Font("Tahoma", 3, 16)); // NOI18N
-        jLabel7.setText("Penghematan");
-
-        txtHemat.setEditable(false);
-
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
@@ -200,11 +202,17 @@ lblSliderValue.setText("Pilih via Slider");
                     .addComponent(txtHasil, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(txtHemat, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addGap(82, 82, 82))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
                     .addComponent(txtHasil))
@@ -229,54 +237,92 @@ lblSliderValue.setText("Pilih via Slider");
             }
         });
 
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(btnClearRiwayat, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 445, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 438, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnClearRiwayat)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnClearRiwayat, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 601, Short.MAX_VALUE))
-                .addGap(6, 6, 6))
+                .addContainerGap()
+                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(8, 8, 8)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(1, 1, 1)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane2)
-                        .addGap(10, 10, 10)
-                        .addComponent(btnClearRiwayat)))
+                .addContainerGap()
+                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnClearRiwayatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearRiwayatActionPerformed
+        int confirm = JOptionPane.showConfirmDialog(this,
+            "Apakah Anda yakin ingin menghapus riwayat?",
+            "Konfirmasi Hapus",
+            JOptionPane.YES_NO_OPTION);
+
+        if (confirm == JOptionPane.YES_OPTION) {
+            txtRiwayat.setText(""); // kosongkan isi JTextArea
+        }
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnClearRiwayatActionPerformed
+
     private void btnHitungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHitungActionPerformed
-       String hargaText = txtHargaAsli.getText().trim();
-       
-            if (hargaText.isEmpty()) {
-                JOptionPane.showMessageDialog(this, "Harga tidak boleh kosong!", "Error", JOptionPane.ERROR_MESSAGE);
-                return;
-            }
-                    try {
-        double hargaAsli = Double.parseDouble(txtHargaAsli.getText());
-        int diskonUtama = Integer.parseInt(cmbDiskon.getSelectedItem().toString().replace("%", ""));
+        String hargaText = txtHargaAsli.getText().trim();
+
+        if (hargaText.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Harga tidak boleh kosong!", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        try {
+            double hargaAsli = Double.parseDouble(txtHargaAsli.getText());
+            int diskonUtama = Integer.parseInt(cmbDiskon.getSelectedItem().toString().replace("%", ""));
             int diskonSlider = sldDiskon.getValue();
             int diskon;
 
@@ -289,69 +335,56 @@ lblSliderValue.setText("Pilih via Slider");
                 return;
             }
 
-        // Kupon diskon tambahan
-// Kupon diskon tambahan (pakai class KuponUtility)
-        String kupon = txtKupon.getText().trim();
-        int diskonKupon = 0;
+            // Kupon diskon tambahan
+            // Kupon diskon tambahan (pakai class KuponUtility)
+            String kupon = txtKupon.getText().trim();
+            int diskonKupon = 0;
 
-        if (!kupon.isEmpty()) {
-            if (KuponUtility.isValidKupon(kupon)) {
-                diskonKupon = KuponUtility.getDiskonKupon(kupon);
-                JOptionPane.showMessageDialog(this, 
-                    "Kupon " + kupon.toUpperCase() + " berhasil digunakan! Diskon tambahan " + diskonKupon + "%.");
-            } else {
-                JOptionPane.showMessageDialog(this, 
-                    "Kode kupon tidak valid!\n\n" + KuponUtility.getDaftarKupon(),
-                    "Kupon Salah", JOptionPane.WARNING_MESSAGE);
+            if (!kupon.isEmpty()) {
+                if (KuponUtility.isValidKupon(kupon)) {
+                    diskonKupon = KuponUtility.getDiskonKupon(kupon);
+                    JOptionPane.showMessageDialog(this,
+                        "Kupon " + kupon.toUpperCase() + " berhasil digunakan! Diskon tambahan " + diskonKupon + "%.");
+                } else {
+                    JOptionPane.showMessageDialog(this,
+                        "Kode kupon tidak valid!\n\n" + KuponUtility.getDaftarKupon(),
+                        "Kupon Salah", JOptionPane.WARNING_MESSAGE);
+                }
             }
+
+            int totalDiskon = diskon + diskonKupon;
+            if (totalDiskon > 100) totalDiskon = 100; // Maksimal 100%
+
+            double penghematan = hargaAsli * totalDiskon / 100;
+            double hargaAkhir = hargaAsli - penghematan;
+
+            txtHasil.setText(String.format("%.2f", hargaAkhir));
+            txtHemat.setText(String.format("%.2f", penghematan));
+
+            // Tambahkan ke riwayat
+            txtRiwayat.append(
+                "Harga Asli: " + hargaAsli +
+                " | Diskon: " + totalDiskon + "%" +
+                " | Harga Akhir: " + hargaAkhir + "\n"
+            );
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Masukkan angka yang valid untuk harga!", "Error", JOptionPane.ERROR_MESSAGE);
         }
-
-        int totalDiskon = diskon + diskonKupon;
-        if (totalDiskon > 100) totalDiskon = 100; // Maksimal 100%
-
-        double penghematan = hargaAsli * totalDiskon / 100;
-        double hargaAkhir = hargaAsli - penghematan;
-
-        txtHasil.setText(String.format("%.2f", hargaAkhir));
-        txtHemat.setText(String.format("%.2f", penghematan));
-
-        // Tambahkan ke riwayat
-        txtRiwayat.append(
-            "Harga Asli: " + hargaAsli +
-            " | Diskon: " + totalDiskon + "%" +
-            " | Harga Akhir: " + hargaAkhir + "\n"
-        );
-    } catch (NumberFormatException e) {
-        JOptionPane.showMessageDialog(this, "Masukkan angka yang valid untuk harga!", "Error", JOptionPane.ERROR_MESSAGE);
-    }
         // TODO add your handling code here:
     }//GEN-LAST:event_btnHitungActionPerformed
 
-    private void btnClearRiwayatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearRiwayatActionPerformed
-    int confirm = JOptionPane.showConfirmDialog(this,
-        "Apakah Anda yakin ingin menghapus riwayat?",
-        "Konfirmasi Hapus",
-        JOptionPane.YES_NO_OPTION);
-    
-    if (confirm == JOptionPane.YES_OPTION) {
-        txtRiwayat.setText(""); // kosongkan isi JTextArea
-    }
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnClearRiwayatActionPerformed
+    private void sldDiskonStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sldDiskonStateChanged
+        int nilai = sldDiskon.getValue();
+        lblSliderValue.setText("Pilih via Slider " + nilai + "%"); // tampilkan nilai di label
+        System.out.println("Nilai slider: " + nilai);
+    }//GEN-LAST:event_sldDiskonStateChanged
 
     private void cmbDiskonItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cmbDiskonItemStateChanged
-    if (evt.getStateChange() == java.awt.event.ItemEvent.SELECTED) {
-        sldDiskon.setValue(0); // Reset slider jika combobox digunakan
-    }
-     // TODO add your handling code here:
+        if (evt.getStateChange() == java.awt.event.ItemEvent.SELECTED) {
+            sldDiskon.setValue(0); // Reset slider jika combobox digunakan
+        }
+        // TODO add your handling code here:
     }//GEN-LAST:event_cmbDiskonItemStateChanged
-
-    private void sldDiskonStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_sldDiskonStateChanged
-    int nilai = sldDiskon.getValue();
-    lblSliderValue.setText("Pilih via Slider " + nilai + "%"); // tampilkan nilai di label
-    System.out.println("Nilai slider: " + nilai);
-
-    }//GEN-LAST:event_sldDiskonStateChanged
 
     /**
      * @param args the command line arguments
@@ -401,6 +434,8 @@ lblSliderValue.setText("Pilih via Slider");
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JLabel lblSliderValue;
